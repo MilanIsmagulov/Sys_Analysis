@@ -8,12 +8,15 @@
         *{
             font-family: sans-serif;
         }
+        p{
+            overflow-y: scroll;
+        }
     </style>
     <link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
-<script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+    <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
           // customised options
@@ -2601,9 +2604,9 @@
             <li><p><strong>Необходимые условия оптимальности</strong>:</p>
             <ul>
             <li>Если $x^{-}$ — решение задачи выпуклого программирования, то для него выполняются <strong>необходимые условия оптимальности</strong>, такие как:
-            $$
+            <p>$$
             \nabla f(x^{-}) + \sum_{i=1}^{m} \lambda_i \nabla g_i(x^*) + \sum_{j=1}^{p} \mu_j \nabla h_j(x^{-}) = 0,
-            $$
+            $$</p>
             где $\lambda_i \geq 0$ для всех $i$, и $g_i(x^{-}) \leq 0$.</li>
             </ul>
             </li>
@@ -2615,9 +2618,9 @@
             <p>Если функция $f(x)$ дифференцируема и выпуклая, а множество допустимых решений является выпуклым, то:</p>
             <ol>
             <li><p><strong>Необходимое условие экстремума</strong>:
-            Для точки $x^_$, которая является точкой экстремума функции $f(x)$ на выпуклом множестве $C$, необходимо выполнение условия:
+            Для точки $x^{-}$, которая является точкой экстремума функции $f(x)$ на выпуклом множестве $C$, необходимо выполнение условия:
             $$
-            \nabla f(x^_) = 0,
+            \nabla f(x^{-}) = 0,
             $$
             то есть градиент функции в этой точке равен нулю.</p>
             </li>
